@@ -1,0 +1,55 @@
+
+body {
+    background-color: #f2f2f5;
+    margin: 0;
+    padding: 0;
+}
+.cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    width: 25%;
+    padding: 15px;
+    border: 1px solid #f40fb3;
+    /* outline: 1px solid #fa0658;
+    outline-offset: 20px; */
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card h3 {
+    color: #ffcc00;
+}
+.card p {
+    color: #666;
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px thin #f40fb3;
+}
+
+.author-info h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.author-info p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}

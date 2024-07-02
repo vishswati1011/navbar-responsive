@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
 
   <body>
@@ -12,29 +12,21 @@
       <h1>Navbar</h1>
 
       <div class="menu" onClick="toggleMenu()">
-        Menu
-        <ul class="menu_list dropdown">
+        <span>Go to</span>
+        <ul class="nav_list">
           <li>About Us</li>
           <li>Service</li>
           <li>Products</li>
-          <li>Content</li>
+          <li><button class="list_btn">Content</button></li>
         </ul>
       </div>
-
-      <ul class="navbar_option">
-        <li class="nav_list">About Us</li>
-        <li class="nav_list">Service</li>
-        <li class="nav_list">Products</li>
-        <li class="nav_list">Content</li>
-      </ul>
     </nav>
 
-    <script src="script.js"></script>
-    <!-- <script>
+    <script>
       function toggleMenu() {
-        const menuList = document.querySelector(".menu ul.menu_list");
+        const menuList = document.querySelector(".menu ul.nav_list");
         menuList.classList.toggle("active");
       }
-    </script> -->
+    </script>
   </body>
 </html>
